@@ -3,9 +3,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/styles.scss',
+  entry: {
+    styles: './src/styles.scss',
+    'styles.mobile': './src/styles.mobile.scss',
+    'styles.desktop': './src/styles.desktop.scss',
+  },
   output: {
     path: path.resolve(__dirname, 'public'),
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -16,6 +21,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'styles.css' }),
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
   ],
 };
