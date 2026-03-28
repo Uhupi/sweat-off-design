@@ -5,7 +5,7 @@ body {
 }
 
 .recycling_disposal {
-    padding: 43px 17px;
+    padding: 43px 17px 27px;
 
     &_header {
         margin-bottom: 35px;
@@ -24,7 +24,6 @@ body {
 .recycling_disposal_nav {
     display: flex;
     align-items: center;
-    // overflow: hidden;
 
     ul {
         flex: 1;
@@ -42,7 +41,6 @@ body {
         }
 
         li {
-            position: relative;
             flex-shrink: 0;
 
             a {
@@ -52,15 +50,10 @@ body {
             }
 
             &.is-active a:before {
-                content: '';
-                width: 67%;
-                height: 1.5px;
-                background-color: $primary-color;
-                position: absolute;
                 top: 33px;
-                left: 0%;
-
+                left: 0;
             }
+
             // Only to fit the design, should just space-between the items
             &:nth-child(3) a {
                 transform: translateX(14px);
@@ -117,6 +110,10 @@ body {
             font-weight: 600;
             margin-bottom: 2px;
         }
+
+        &:last-child {
+            min-height: 0;
+        }
     }
 }
 
@@ -135,4 +132,7 @@ body {
         height: $callout-size-mobile;
         font-size: 10px;
      }
+    .callout-1 { bottom: 83%;   left: 5%; }
+    .callout-2 { bottom: 55%;  left: 0%; transform: translateX(-50%); }
+    .callout-3 { bottom: 93%;   right: 0%; transform: translateX(35%); }
 }

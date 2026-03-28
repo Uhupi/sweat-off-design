@@ -59,6 +59,8 @@ body {
         margin: 0 auto;
 
         li {
+            position: relative;
+
             a {
                 display: inline-block;
                 font-size: 15px;
@@ -72,6 +74,14 @@ body {
                 &:hover {
                     opacity: 0.7;
                 }
+            }
+
+            &.is-active a:before {
+                content: '';
+                width: 39px;
+                height: 1px;
+                background-color: $primary-color;
+                position: absolute;
             }
         }
     }
@@ -143,8 +153,4 @@ body {
         z-index: 10;
         user-select: none;
     }
-
-    .callout-1 { bottom: 86%;   left: 5%; }
-    .callout-2 { bottom: 56%;  left: 0.5%; transform: translateX(-50%); }
-    .callout-3 { bottom: 93%;   right: 0%; transform: translateX(35%); }
 }

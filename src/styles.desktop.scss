@@ -28,6 +28,11 @@ body {
         max-width: 790px;
 
         li {
+            &.is-active a:before {
+                top: 26px;
+                left: 0;
+            }
+
             // Only to fit the design, should just space-between the items
             &:nth-child(2) a {
                 transform: translateX(1px);
@@ -83,10 +88,14 @@ body {
 
 .visual__bottle {
     flex: 0 0 50%;
-    
+
      .callout {
         width: $callout-size;
         height: $callout-size;
         font-size: 21px;
      }
+
+    .callout-1 { bottom: 86%;   left: 5%; }
+    .callout-2 { bottom: 56%;  left: 0.5%; transform: translateX(-50%); }
+    .callout-3 { bottom: 93%;   right: 0%; transform: translateX(35%); }
 }
