@@ -1,11 +1,5 @@
 @use 'fonts';
-
-$bg-color: #F9F7F6;
-$primary-color: #2E2E2E;
-$accent: #E84400;
-$callout-size: 32px;
-
-$spacing: 15px;
+@use 'variables' as *;
 
 // Utilities & Reset
 * {
@@ -60,9 +54,7 @@ body {
 .recycling_disposal_nav {
     ul {
         display: flex;
-        justify-content: space-between;
         list-style: none;
-        max-width: 790px;
         margin: 0 auto;
 
         li {
@@ -99,10 +91,6 @@ body {
             }
             &:nth-child(7) a {
                 transform: translateX(-7.5px);
-            }
-
-            &.is-active a {
-                border-bottom: 1px solid $primary-color;
             }
         }
     }

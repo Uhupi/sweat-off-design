@@ -1,9 +1,15 @@
+@use 'variables' as *;
+
 body {
     padding: 76px 0;
 }
 
 .recycling_disposal {
     padding: 45px 17px;
+
+    &_header {
+        margin-bottom: 43px;
+    }
 
     &_title {
         font-size: 24px;
@@ -12,16 +18,58 @@ body {
         height: 64px;
         padding-top: 6px;
         max-width: 80%;
-        margin-bottom: 30px;
     }
 }
 
+.recycling_disposal_parts {
+    order: 2;
+}
+
+.recycling_disposal_visual {
+    order: 1;
+}
+
 .recycling_disposal_nav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 18px;
+
     ul {
+        flex: 1;
+        overflow-x: auto;
+        scrollbar-width: none;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 49px;
+        max-width: none;
+        margin: 0;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        li {
+            flex-shrink: 0;
+
+            &.is-active a {
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+
+    &__arrow {
+        width: 32px;
+        cursor: pointer;
         display: flex;
-        justify-content: space-between;
-        list-style: none;
-        max-width: 790px;
-        margin: 0 auto;
+        align-items: center;
+
+        &--prev {
+            text-align: left;
+        }
+
+        &--next {
+            text-align: right;
+        }
     }
 }
