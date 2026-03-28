@@ -123,13 +123,13 @@ body {
 
 .recycling_disposal_content {
     display: flex;
-    gap: 78px;
+    gap: 6.5%;
     align-items: flex-start;
     margin-top: 89px;
 }
 
 .recycling_disposal_parts {
-    flex: 0 0 550px;
+    flex: 0 0 46%;
 
     .part {
         padding: 0px 25px 32px 0;
@@ -175,19 +175,21 @@ body {
     flex: 1;
     min-width: 0;
     display: flex;
-    gap: 70px;
+    gap: 12.34%;
 }
 
 .visual__bottle {
     position: relative;
 
     &:first-child {
-        flex: 0 0 152px;
+        flex: 0 0 50%;
         padding-top: 15px;
+        max-width: 152px;
     }
 
     &:last-child {
-        flex: 0 0 153px;
+        flex: 0 0 50%;
+        max-width: 153px;
     }
 
     .callout {
