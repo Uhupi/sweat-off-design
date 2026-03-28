@@ -1,0 +1,30 @@
+{
+  "name": "sweat-off-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uhupi/sweat-off-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Uhupi/sweat-off-design/issues"
+  },
+  "homepage": "https://github.com/Uhupi/sweat-off-design#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "mini-css-extract-plugin": "^2.10.1",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
+  }
+}

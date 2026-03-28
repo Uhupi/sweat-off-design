@@ -1,0 +1,25 @@
+$bg-color: #F9F7F6;
+$primary: #1a1a1a;
+$accent: #ff5500;
+
+// Reset elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $bg-color;
+    color: $accent;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+}
