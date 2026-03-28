@@ -1,8 +1,7 @@
-$bg-color: #F9F7F6;
+$bg-color: #F5F4F0;
 $primary: #1a1a1a;
-$accent: #ff5500;
+$accent: #E84400;
 
-// Reset elements
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +10,176 @@ $accent: #ff5500;
 
 body {
     background: $bg-color;
-    color: $accent;
-    font-family: sans-serif;
+    color: $primary;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
+    padding: 60px 24px;
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1100px;
     width: 100%;
+}
+
+.recycling_disposal {
+    &_header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &_category {
+        font-family:  'Barlow', sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: $primary;
+        margin-bottom: 14px;
+    }
+
+    &_title {
+        font-size: 34px;
+        font-weight: 400;
+        color: $primary;
+        line-height: 1.2;
+    }
+}
+
+.recycling_disposal_nav {
+    margin-bottom: 56px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+
+        li {
+            a {
+                display: inline-block;
+                font-size: 11px;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $primary;
+                padding-bottom: 6px;
+                opacity: 0.45;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            &.is-active a {
+                opacity: 1;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+}
+
+// ── Content (two columns) ────────────────────────────────────────────────────
+
+.recycling_disposal_content {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+// ── Parts list ───────────────────────────────────────────────────────────────
+
+.recycling_disposal_parts {
+    flex: 0 0 370px;
+
+    .part {
+        padding: 30px 0;
+        border-bottom: 1px solid rgba($primary, 0.15);
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &__title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: $primary;
+            margin-bottom: 10px;
+        }
+
+        &__material {
+            font-size: 14px;
+            color: $primary;
+            margin-bottom: 4px;
+        }
+
+        &__disposal {
+            font-size: 14px;
+            color: $primary;
+            margin-bottom: 10px;
+        }
+
+        &__note {
+            font-size: 13px;
+            font-style: italic;
+            color: rgba($primary, 0.65);
+            line-height: 1.6;
+        }
+    }
+}
+
+// ── Visual area ──────────────────────────────────────────────────────────────
+
+.recycling_disposal_visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.visual__bottle {
+    position: relative;
+    flex-shrink: 0;
+
+    img {
+        display: block;
+        height: 400px;
+        width: auto;
+    }
+}
+
+// ── Callout circles ──────────────────────────────────────────────────────────
+
+.callout {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $accent;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    user-select: none;
+}
+
+.visual__bottle--open {
+    .callout--1 { top: 2%;   left: 50%; transform: translateX(-50%); }
+    .callout--2 { top: 46%;  left: -14px; }
+}
+
+.visual__bottle--close {
+    .callout--3 { top: 2%;   right: -14px; }
 }
