@@ -123,11 +123,16 @@ body {
 }
 
 .recycling_disposal_parts {
-    flex: 0 0 370px;
+    flex: 0 0 550px;
 
     .part {
         padding: 30px 0;
-        border-bottom: 1px solid rgba($primary-color, 0.15);
+        border-bottom: 0.3px solid $primary-color;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 2%;
+        padding-right: 38px;
 
         &:first-child {
             padding-top: 0;
@@ -135,6 +140,11 @@ body {
 
         &:last-child {
             border-bottom: none;
+        }
+
+        strong, em {
+            display: block;
+            // margin-top: 8px;
         }
 
         &__title {
@@ -146,25 +156,6 @@ body {
             font-size: 20px;
             line-height: 40px;
             letter-spacing: 4%;
-        }
-
-        &__material {
-            font-size: 14px;
-            color: $primary-color;
-            margin-bottom: 4px;
-        }
-
-        &__disposal {
-            font-size: 14px;
-            color: $primary-color;
-            margin-bottom: 10px;
-        }
-
-        &__note {
-            font-size: 13px;
-            font-style: italic;
-            color: rgba($primary-color, 0.65);
-            line-height: 1.6;
         }
     }
 }
