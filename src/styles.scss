@@ -30,7 +30,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 121px 0;
     background-color: white;
 }
 
@@ -41,13 +40,8 @@ body {
 }
 
 .recycling_disposal {
-    padding: 48px 61px 10px;
     background: $bg-color;
 
-    &_header {
-        // text-align: center;
-        // margin-bottom: 28.5px;
-    }
 
     &_category {
         height: 23px;
@@ -60,13 +54,6 @@ body {
 
     &_title {
         font-weight: 500;
-        font-style: Medium;
-        font-size: 29px;
-        line-height: 44px;
-        letter-spacing: 0%;
-        text-align: center;
-        height: 68px;
-        padding-top: 7px;
     }
 }
 
