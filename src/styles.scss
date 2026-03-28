@@ -187,23 +187,23 @@ body {
         padding-top: 15px;
     }
 
+    .callout {
+        position: absolute;
+        width: $callout-size;
+        height: $callout-size;
+        border-radius: 50%;
+        background: $primary-color;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        user-select: none;
+    }
+
     .callout-1 { top: 10%;   left: 5%; }
     .callout-2 { top: 39%;  left: 0%; transform: translateX(-50%); }
     .callout-3 { top: 1%;   right: 0%; transform: translateX(50%); }
-}
-
-.callout {
-    position: absolute;
-    width: $callout-size;
-    height: $callout-size;
-    border-radius: 50%;
-    background: $primary-color;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    user-select: none;
 }
