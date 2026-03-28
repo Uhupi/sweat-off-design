@@ -30,14 +30,14 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 121px 97px;
+    padding: 121px 0;
     background-color: white;
 }
 
 .container {
     max-width: 1317px;
     width: 100%;
-    margin: 0 auto 0 0;
+    margin: 0 auto;
 }
 
 .recycling_disposal {
@@ -176,15 +176,18 @@ body {
     min-width: 0;
     display: flex;
     gap: 70px;
-    padding-right: 193px;
 }
 
 .visual__bottle {
     position: relative;
-    flex: 1;
 
     &:first-child {
+        flex: 0 0 152px;
         padding-top: 15px;
+    }
+
+    &:last-child {
+        flex: 0 0 153px;
     }
 
     .callout {
@@ -205,5 +208,5 @@ body {
 
     .callout-1 { top: 10%;   left: 5%; }
     .callout-2 { top: 39%;  left: 0%; transform: translateX(-50%); }
-    .callout-3 { top: 1%;   right: 0%; transform: translateX(50%); }
+    .callout-3 { top: 0%;   right: 0%; transform: translateX(35%); }
 }
