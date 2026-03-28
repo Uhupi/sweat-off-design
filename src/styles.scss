@@ -1,6 +1,11 @@
+@use 'fonts';
+
 $bg-color: #F5F4F0;
 $primary: #1a1a1a;
 $accent: #E84400;
+
+$spacing: 15px;
+
 
 * {
     margin: 0;
@@ -11,17 +16,18 @@ $accent: #E84400;
 body {
     background: $bg-color;
     color: $primary;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Geogrotesque', sans-serif;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 60px 24px;
+    padding: 55px $spacing;
 }
 
 .container {
     max-width: 1100px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .recycling_disposal {
@@ -31,7 +37,7 @@ body {
     }
 
     &_category {
-        font-family:  'Barlow', sans-serif;
+        font-family:  'Geogrotesque', sans-serif;
         font-size: 15px;
         letter-spacing: 0.18em;
         text-transform: uppercase;

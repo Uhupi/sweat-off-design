@@ -1,0 +1,26 @@
+@each $weight, $name in (
+    100: 'Thin',
+    200: 'UltraLight',
+    300: 'Light',
+    400: 'Regular',
+    500: 'Medium',
+    600: 'SemiBold',
+    700: 'Bold'
+) {
+    @font-face {
+        font-family: 'Geogrotesque';
+        src: url('../public/assets/fonts/Geogrotesque/Geogrotesque-#{$name}.woff2') format('woff2'),
+             url('../public/assets/fonts/Geogrotesque/Geogrotesque-#{$name}.woff') format('woff');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Geogrotesque';
+        src: url('../public/assets/fonts/Geogrotesque/Geogrotesque-#{$name}Italic.woff2') format('woff2'),
+             url('../public/assets/fonts/Geogrotesque/Geogrotesque-#{$name}Italic.woff') format('woff');
+        font-weight: $weight;
+        font-style: italic;
+        font-display: swap;
+    }
+}
