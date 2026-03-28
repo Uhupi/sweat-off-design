@@ -13,7 +13,7 @@ $spacing: 15px;
     padding: 0;
     box-sizing: border-box;
 }
-a, a:visited {
+a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
@@ -45,8 +45,8 @@ body {
     background: $bg-color;
 
     &_header {
-        text-align: center;
-        margin-bottom: 28.5px;
+        // text-align: center;
+        // margin-bottom: 28.5px;
     }
 
     &_category {
