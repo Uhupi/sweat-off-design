@@ -131,7 +131,7 @@ body {
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
-        letter-spacing: 2%;
+        letter-spacing: 0.35px;
         padding-right: 38px;
 
         &:first-child {
@@ -142,9 +142,13 @@ body {
             border-bottom: none;
         }
 
+        strong {
+            font-weight: 600;
+        letter-spacing: 0.45px;
+        }
+
         strong, em {
             display: block;
-            // margin-top: 8px;
         }
 
         &__title {
