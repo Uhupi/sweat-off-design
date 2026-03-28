@@ -5,18 +5,18 @@ body {
 }
 
 .recycling_disposal {
-    padding: 45px 17px;
+    padding: 43px 17px;
 
     &_header {
-        margin-bottom: 43px;
+        margin-bottom: 42px;
     }
 
     &_title {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 2%;
-        height: 64px;
-        padding-top: 6px;
+        height: 63px;
+        padding-top: 5px;
         max-width: 80%;
     }
 }
@@ -67,22 +67,27 @@ body {
 }
 
 .recycling_disposal_content {
-    gap: 10%;
-    margin-top: 50px;
+    gap: 10.5%;
+    margin-top: 48px;
 }
 
 .recycling_disposal_parts {
     order: 2;
-    flex: 0 0 232px;
+    flex: 0 0 229px;
 
     .part {
         font-size: 12px;
-        line-height: 23px;
+        line-height: 24px;
+        min-height: 177px;
+        padding-bottom: 20px;
+        margin-bottom: 21px;
+        letter-spacing: 0.25px;
 
         &__title {
             font-size: 16px;
             line-height: 32px;
-            letter-spacing: 4%;
+            letter-spacing: 4.3%;
+            height: 34px;
         }
 
         strong, em {
@@ -90,16 +95,29 @@ body {
         }
 
         em {
-            line-height: 18px;
+            line-height: 17px;
+            letter-spacing: 0.23px;
         }
 
         strong {
             font-weight: 600;
-            letter-spacing: 0.50px;
+            margin-bottom: 2px;
         }
     }
 }
 
 .recycling_disposal_visual {
     order: 1;
+}
+
+.visual__bottle {
+    &:first-child {
+        padding-top: 7px;   
+        margin-bottom: 30px;
+    }
+     .callout {
+        width: $callout-size-mobile;
+        height: $callout-size-mobile;
+        font-size: 10px;
+     }
 }

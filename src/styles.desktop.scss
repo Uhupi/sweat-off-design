@@ -42,25 +42,28 @@ body {
 
     .part {
         padding: 0px 25px 32px 0;
+        margin-bottom: 26px;
+
+        &__title {
+            margin-bottom: 11px;
+        }
     }
 }
-
-// .recycling_disposal_parts {
-
-//         strong, em {
-//             display: block;
-//             letter-spacing: 0.55px;
-//         }
-
-//         strong {
-//             font-weight: 600;
-//             letter-spacing: 0.50px;
-//         }
-// }
 
 .recycling_disposal_visual {
     flex: 1;
     min-width: 0;
     display: flex;
     gap: 12.34%;
+}
+
+.visual__bottle {
+    &:first-child {
+        padding-top: 15px;
+    }
+     .callout {
+        width: $callout-size;
+        height: $callout-size;
+        font-size: 21px;
+     }
 }

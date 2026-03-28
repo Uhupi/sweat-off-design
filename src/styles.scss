@@ -109,7 +109,6 @@ body {
         font-size: 18px;
         line-height: 27px;
         letter-spacing: 0.38px;
-        margin-bottom: 26px;
 
         &:first-child {
             padding-top: 0;
@@ -133,7 +132,6 @@ body {
             font-weight: 500;
             text-transform: uppercase;
             color: $primary-color;
-            margin-bottom: 11px;
             font-size: 20px;
             line-height: 40px;
             letter-spacing: 4%;
@@ -146,7 +144,6 @@ body {
 
     &:first-child {
         flex: 0 0 50%;
-        padding-top: 15px;
         max-width: 152px;
     }
 
@@ -157,12 +154,9 @@ body {
 
     .callout {
         position: absolute;
-        width: $callout-size;
-        height: $callout-size;
         border-radius: 50%;
         background: $primary-color;
         color: #fff;
-        font-size: 20px;
         font-weight: 500;
         display: flex;
         align-items: center;
