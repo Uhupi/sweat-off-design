@@ -17,6 +17,7 @@ img {
     height: auto;
 }
 
+// Stying
 body {
     color: $primary-color;
     font-family: 'Geogrotesque', sans-serif;
@@ -123,12 +124,10 @@ body {
     position: relative;
 
     &:first-child {
-        flex: 0 0 50%;
         max-width: 152px;
     }
 
     &:last-child {
-        flex: 0 0 50%;
         max-width: 153px;
     }
 
@@ -145,7 +144,7 @@ body {
         user-select: none;
     }
 
-    .callout-1 { top: 10%;   left: 5%; }
-    .callout-2 { top: 39%;  left: 0%; transform: translateX(-50%); }
-    .callout-3 { top: 0%;   right: 0%; transform: translateX(35%); }
+    .callout-1 { bottom: 86%;   left: 5%; }
+    .callout-2 { bottom: 56%;  left: 0.5%; transform: translateX(-50%); }
+    .callout-3 { bottom: 93%;   right: 0%; transform: translateX(35%); }
 }

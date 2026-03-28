@@ -78,12 +78,12 @@ body {
     min-width: 0;
     display: flex;
     gap: 12.34%;
+    align-items: end;
 }
 
 .visual__bottle {
-    &:first-child {
-        padding-top: 15px;
-    }
+    flex: 0 0 50%;
+    
      .callout {
         width: $callout-size;
         height: $callout-size;
