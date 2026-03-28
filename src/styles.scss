@@ -16,6 +16,12 @@ a, a:visited {
     color: inherit;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 body {
     color: $primary-color;
     font-family: 'Geogrotesque', sans-serif;
@@ -116,7 +122,7 @@ body {
 
 .recycling_disposal_content {
     display: flex;
-    gap: 80px;
+    gap: 78px;
     align-items: flex-start;
     margin-top: 89px;
 }
@@ -164,24 +170,20 @@ body {
     }
 }
 
-// ── Visual area ──────────────────────────────────────────────────────────────
-
 .recycling_disposal_visual {
     flex: 1;
+    min-width: 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 24px;
+    gap: 70px;
+    padding-right: 193px;
 }
 
 .visual__bottle {
     position: relative;
-    flex-shrink: 0;
+    flex: 1;
 
-    img {
-        display: block;
-        height: 400px;
-        width: auto;
+    &:first-child {
+        padding-top: 15px;
     }
 }
 
@@ -192,7 +194,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: $accent;
+    background: $primary-color;
     color: #fff;
     font-size: 13px;
     font-weight: 700;
@@ -201,6 +203,7 @@ body {
     justify-content: center;
     z-index: 10;
     user-select: none;
+    display: none;
 }
 
 .visual__bottle-open {
