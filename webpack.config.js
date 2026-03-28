@@ -4,6 +4,7 @@ const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 module.exports = {
   mode: 'production',
+  devtool: 'source-map',
   entry: {
     main: './src/main.js',
     styles: './src/styles.scss',
@@ -18,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }, 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false, sourceMap: true } }, { loader: 'sass-loader', options: { sourceMap: true } }],
       },
     ],
   },

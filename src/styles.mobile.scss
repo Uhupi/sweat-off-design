@@ -21,14 +21,6 @@ body {
     }
 }
 
-.recycling_disposal_parts {
-    order: 2;
-}
-
-.recycling_disposal_visual {
-    order: 1;
-}
-
 .recycling_disposal_nav {
     display: flex;
     align-items: center;
@@ -72,4 +64,42 @@ body {
             text-align: right;
         }
     }
+}
+
+.recycling_disposal_content {
+    gap: 10%;
+    margin-top: 50px;
+}
+
+.recycling_disposal_parts {
+    order: 2;
+    flex: 0 0 232px;
+
+    .part {
+        font-size: 12px;
+        line-height: 23px;
+
+        &__title {
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 4%;
+        }
+
+        strong, em {
+            letter-spacing: 0.30px;
+        }
+
+        em {
+            line-height: 18px;
+        }
+
+        strong {
+            font-weight: 600;
+            letter-spacing: 0.50px;
+        }
+    }
+}
+
+.recycling_disposal_visual {
+    order: 1;
 }

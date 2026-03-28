@@ -1,1 +1,2 @@
 (()=>{const e=document.querySelector(".recycling_disposal_nav ul"),o=document.querySelector(".recycling_disposal_nav__arrow--prev"),r=document.querySelector(".recycling_disposal_nav__arrow--next");if(e&&o&&r){const t=120;function n(e,o){e.addEventListener("click",o),e.addEventListener("keydown",e=>{"Enter"!==e.key&&" "!==e.key||(e.preventDefault(),o())})}n(o,()=>e.scrollBy({left:-t,behavior:"smooth"})),n(r,()=>e.scrollBy({left:t,behavior:"smooth"}))}})();
+//# sourceMappingURL=main.js.map
