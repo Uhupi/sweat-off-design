@@ -26,7 +26,30 @@ body {
     ul {
         justify-content: space-between;
         max-width: 790px;
+
+        li {
+            // Only to fit the design, should just space-between the items
+            &:nth-child(2) a {
+                transform: translateX(1px);
+            }
+            &:nth-child(3) a {
+                transform: translateX(6px);
+            }
+            &:nth-child(4) a {
+                transform: translateX(-2px);
+            }
+            &:nth-child(5) a {
+                transform: translateX(6px);
+            }
+            &:nth-child(6) a {
+                transform: translateX(3px);
+            }
+            &:nth-child(7) a {
+                transform: translateX(-7.5px);
+            }
+        }
     }
+
     &__arrow {
         display: none;
     }
