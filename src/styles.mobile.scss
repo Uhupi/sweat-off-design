@@ -26,6 +26,7 @@ body {
 .recycling_disposal_nav {
     display: flex;
     align-items: center;
+    margin: 0px;
 
     ul {
         flex: 1;
@@ -36,7 +37,7 @@ body {
         gap: 49px;
         max-width: none;
         margin: 0;
-        padding-left: 17px;
+        padding-left: 37px;
 
         &::-webkit-scrollbar {
             display: none;
@@ -64,7 +65,7 @@ body {
     }
 
     &__arrow {
-        width: 32px;
+        width: 12px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -135,6 +136,6 @@ body {
         font-size: 10px;
      }
     .callout-1 { bottom: 83%;   left: 5%; }
-    .callout-2 { bottom: 55%;  left: 0%; transform: translateX(-50%); }
+    .callout-2 { bottom: 55%;  left: 2%; transform: translateX(-50%); }
     .callout-3 { bottom: 93%;   right: 0%; transform: translateX(35%); }
 }
