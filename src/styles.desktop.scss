@@ -1,5 +1,7 @@
 @use 'variables' as *;
 
+.mobile-only { display: none; }
+
 body {
     padding: 121px 0;
 }

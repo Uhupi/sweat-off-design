@@ -1,5 +1,7 @@
 @use 'variables' as *;
 
+.desktop-only { display: none; }
+
 body {
     padding: 76px 0;
 }
